@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="https://kit.fontawesome.com/d30c73efb8.js"></script>
+</head>
+
+<body>
+    <!--Showcase-->
+    <div class="showcase bgimg-1">
+        <div class="caption"><span class="border">Kevin's Portfolio</span>
+            <div><span class="subtext">UX/UI Designer & Front-End Web Developer</span></div>
+            <a href="#item-1"><i class="fas fa-chevron-down fa-3x chevron"></i></a>
+        </div>
+    </div>
+    <!--Sidenav-->
+    <div class="sidenav">
+        <a href="https://github.com/KevinPP772" target="_blank"><i class="fab fa-github fa-1x"></i></a>
+        <a href="#"><i class="fab fa-codepen fa-1x"></i></a>
+        <a href="https://twitter.com/1magicMango" target="_blank"><i class="fab fa-twitter fa-1x"></i></a>
+        <a href="https://www.instagram.com/1magicmango/" target="_blank"><i class="fab fa-instagram fa-1x"></i></a>
+    </div>
+    <!--Portfolio (Grid)-->
+    <section id="item-1" class="container">
+        <div class="row">
+            <div class="column img-content">
+                <a href="https://kevinpp772.github.io/Inskino/" target="_blank"><img src="img/inskino.jpg"
+                        class="image-opacity"></a>
+                <img src="img/blue-bulb-card-1520145.jpg" class="image-opacity" onclick="onClick(this)">
+                <img src="img/Artwork N1.jpg" class="image-opacity" onclick="onClick(this)">
+            </div>
+            <div class="column">
+                <a href="https://kevinpp772.github.io/kevin_Pineda/" target="_blank"><img src="img/cv1.JPG"
+                        class="image-opacity"></a>
+                <img src="img//georgie-cobbs-467923-unsplash.jpg" class="image-opacity" onclick="onClick(this)">
+                <img src="img/magicMango.jpg" class="image-opacity" onclick="onClick(this)">
+            </div>
+            <div class=" column">
+                <a href="https://kevinpp772.github.io/Page1-Sketch/" target="_blank"><img src="img/Responsive_LP.jpg"
+                        class="image-opacity"></a>
+                <img src="img/For-the-Motherland.jpg" class="image-opacity" onclick="onClick(this)">
+                <img src="img/popsicle.jpg" class="image-opacity" onclick="onClick(this)">
+            </div>
+        </div>
+    </section>
+    <!--Portfolio Ends-->
+
+    <!--Modal Gallery-->
+    <div id="modal01" class="modal" onclick="this.style.display='none'">
+        <span class="btn display-topright">&times;</span>
+        <div class="modal-content animate-zoom">
+            <img id="img01" style="width:100%">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="item-2" class="footer">
+        <div class="footer-cols">
+            <div class="footer-1-content">
+                <h2 class="header">&lt;About_<b>Me</b>_></h2>
+                <p><span>&lt;p&gt;</span>Front-End Web Developer, spare time Cartoonist & Illustrator <a
+                        href="https://twitter.com/1magicMango" target="_blank">@1magicMango</a>,
+                    pretty chill guy who likes Pizza Fridays<span>&lt;/p&gt;</span></p>
+                <a href="https://kevinpp772.github.io/kevin_Pineda/" target="_blank" class="btn btn-md">See my
+                    Resume</a>
+            </div>
+            <div class="footer-2-content">
+                <h2 class="header">&lt;Contact_Info_></h2>
+                <p><i class="fas fa-briefcase icon-settings margin-right"></i>Front-End Web Developer</p>
+                <p><i class="fas fa-home icon-settings margin-right"></i>San Pedro Sula, HND</p>
+                <p><i class="fas fa-at icon-settings margin-right"></i>kvn_pp772@outlook.com</p>
+                <p><i class="fas fa-phone-alt icon-settings margin-right"></i>+504 9574-2475</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> by Kevin
+        </div>
+    </footer>
+    <!--Footer Ends-->
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+
+</html>

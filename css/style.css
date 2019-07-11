@@ -1,0 +1,253 @@
+:root{
+    --pink-color: #EA4D7A ;
+    --yellow-color: #FCE368;
+    --purple-color: #313B90;
+    --oliveGreen-color: #9DC96F;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*Utility Classes*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #cccccc;
+    display: inline-block;
+}
+.container{
+    max-width: 90%;
+    margin: auto;    
+}
+.text-center{
+    text-align: center;
+}
+.margin-right{
+    margin-right:16px;
+}
+.margin-left{
+    margin-left: 16px;
+}
+.margin-top{
+    margin-top: 16px;
+}
+.margin-bottom{
+    margin-bottom: 16px;
+}
+
+
+/*showcase Settings*/
+.showcase {    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.bgimg-1{
+    background-image: url("/img/4k-wallpaper-blue-sky-blur-281260.jpg");
+    height: 400px;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border{
+    background-color: #111;
+    color:white;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.caption span.subtext{
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    display: inline-block;
+    color: white;
+}
+.chevron{
+    color: white;
+}
+.chevron:hover{
+    color: var(--pink-color);
+}
+/*Sidenav*/
+.sidenav{
+    width: 5%;
+    position: fixed;
+    z-index: 1;
+    top: 15%;    
+    background: black;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+.sidenav a {
+    padding: 6px 6px 6px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #064579;
+    
+}
+
+/*Grid Gallery*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}    
+.column {
+    flex: 25%;
+    padding: 0 4px;
+}  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/*Modal*/
+.image-opacity:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.modal{
+    z-index:3;
+    display:none;
+    padding-top:30px;
+    position:fixed;
+    left:0;top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4);
+}
+.modal-content{
+    margin:auto;
+    position:relative;
+    padding:0;
+    outline:0;width:600px
+}
+.modal .btn{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    color: white;
+    font-weight: bold;
+}
+.modal .btn:hover{
+    background-color: red;
+}
+.animate-zoom{
+    animation:animatezoom 0.6s
+}
+.display-topright{
+    position:absolute;
+    right:0;
+    top:1;
+}
+
+/*Footer*/
+.footer-1-content{  
+    background-color: var(--yellow-color);
+    margin-top: 8px;
+    padding: 2% 10%;      
+    font-size: 1rem;
+    color: #000;
+    border-bottom: var(--pink-color) solid 30px;
+}
+.footer-1-content span{
+    color: var(--pink-color);
+    font-weight: bold;
+}
+.footer-1-content p{
+    padding-bottom:8.5%;
+}
+.footer-2-content{
+    background-color: var(--pink-color);
+    margin-top: 8px;
+    font-size: 1rem;
+    color: white;
+    padding: 2% 10%;      
+    border-bottom: var(--purple-color) solid 30px;
+}
+.footer-2-content span{
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+.footer-cols{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: none;
+    align-items: center;
+    justify-content: center;    
+}
+footer .footer-bottom{
+    background: black;
+    padding: 0.5rem;
+    color: white;
+}
+footer a{
+    color: var(--pink-color);
+    font-weight: bold;
+}
+footer .header{
+    padding-bottom: 10px;
+    border-bottom: var(--purple-color) solid 5px;     
+}
+.icon-settings{    
+    font-size: 18px;
+}
+/*Buttons*/
+.btn{
+    display: inline-block;
+    background: var(--oliveGreen-color);
+    color: white;
+    padding: 0.8rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer; 
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius:2px;
+}
+
+/*Media Queries*/
+/* Parallax*/
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }   
+} 
+/* Grid Queries*/
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 35%; 
+        padding: 0 4px;       
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
